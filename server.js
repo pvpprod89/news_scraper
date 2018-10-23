@@ -31,7 +31,11 @@ app.use(router);
 
 // var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+// var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+var db =
+  process.env.MONGODB_URI ||
+  "mongodb://heroku_j1nkdgs6:pbddpuub54hfmkgmcv0s3c4e7k@ds139243.mlab.com:39243/heroku_j1nkdgs6";
 
 mongoose.connect(
   db,
